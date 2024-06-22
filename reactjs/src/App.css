@@ -1,0 +1,251 @@
+html{
+  scroll-behavior: smooth;
+}
+.App {
+  width: 100%;
+}
+.App-header{
+  display: flex;
+  align-items: center;
+}
+/* Стили для экранов шириной до 768px (например, планшеты и мобильные устройства) */
+@media (max-width: 768px) {
+  .App-header {
+    flex-direction: column;
+  }
+
+  .App-header img {
+    width: 150px; /* Уменьшаем размер логотипа */
+  }
+  .deviz{
+    font-size: 2em;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content {
+    padding: 10px;
+  }
+}
+/* Стили для экранов шириной до 480px (например, мобильные устройства) */
+@media (max-width: 480px) {
+  .App-header img {
+    width: 80px; /* Еще больше уменьшаем размер логотипа */
+  }
+
+  .content h1 {
+    font-size: 1.5em; /* Уменьшаем размер заголовка */
+  }
+
+  .content p {
+    font-size: 0.9em; /* Уменьшаем размер текста */
+  }
+}
+.title{
+  margin-left: auto;
+  padding-right: 20px;
+  color: #A96262;
+}
+.not_found{
+  text-align: center;
+}
+.not_found p{
+  font-size: 80px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  color: #9f7c39;
+}
+body{
+  background-color: #F2EBE1;
+}
+.item{
+  margin-left:25px;
+}
+.deviz{
+  font-size: 50px;
+}
+.username{
+  color: #FFFFFF;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom:10px;
+  margin-left:20px;
+
+  text-align: center;
+  justify-content:center;
+  align-items: center;
+}
+nav{
+  background-color: #EDA8A8;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+nav a{
+    text-align: center;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.75s ease;
+}
+nav a:hover{
+  background-color: #D96868;
+}
+.active{
+  background-color: #D96868;
+}
+.content{
+  background-color: white;
+  padding-bottom: 50px;
+  padding-top:1px;
+}
+.welcome{
+  padding-top: 20px;
+}
+p{
+  font-size: 25px;
+  margin: 0 100px 0 100px;
+}
+.footer{
+  background-color: #CCB18B;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  
+}
+.knopka_zornet {
+  text-align: center;
+  overflow: hidden;
+  list-style: none;
+  margin-right: 40px;
+}
+.knopka_zornet > li {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 10px 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.recipe-title-card{
+  font-size: 20px;
+}
+.knopka_zornet > li a {
+  border-radius: 500px;
+  width: 40px;
+  height: 40px;
+  display: block;
+  background: rgba(0, 0, 0, 0.49);
+}
+.forma {
+  margin: 0 0 20px 0;
+  display:inline-block;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow:hidden;
+}
+button {
+  padding-left: auto;
+  width: 200px;
+  height: 70px;
+  background-color: #965454;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.75s ease;
+}
+
+.button-recipe a {
+  color: #FFFFFF; /* Установите желаемый цвет для ссылок */
+  text-decoration: solid; /* Удалите подчеркивание по умолчанию для ссылок */
+}
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button:hover {
+  background-color: #603737;
+}
+
+.content-form{
+  background-color: white;
+  border-radius: 15px;
+
+  margin: 0 300px 50px 300px;
+}
+.recipe-detail-image-card{
+  object-fit: cover; /* Это сохранит пропорции изображения и обрежет его, чтобы оно соответствовало заданным размерам */
+  display: block;
+  margin-bottom: 20px;
+  margin-top:40px;
+}
+.recipe-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.recipe {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.recipe img {
+  max-width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+.add-recipe{
+  margin: 0 auto;
+}
+.item img{
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+.row{
+  width:auto;
+}
+.exit_button{
+  background-color: #EDA8A8;
+  border-radius: 0px;
+  text-align: center;
+  padding-top: 5px;
+  align-items: center;
+  justify-content: center;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.exit_button:hover{
+  background-color: #D96868;
+  height: 77px;
+}
+.auth_style{
+  font-size:25px;
+  border-radius: 10px;
+}
